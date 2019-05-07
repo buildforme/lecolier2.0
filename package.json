@@ -1,0 +1,18 @@
+{
+  "name": "ecolier",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV='development' pm2 start --name devApp ./bin/www --watch & pm2 monit",
+    "prod": "cross-env NODE_ENV='production' pm2 start --name prod ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "mongoose": "^5.5.5",
+    "morgan": "~1.9.0"
+  }
+}
